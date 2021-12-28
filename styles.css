@@ -1,0 +1,263 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+body {
+    background-color: ghostwhite;
+    margin: 0;
+    padding: 0;
+}
+
+div.op1 {
+  background-color: rgb(175, 241, 175);
+  font-style: italic;
+}
+
+div.op2 {
+  background-color: lightpink;
+  font-style: italic;
+}
+
+div.op3 {
+  background-color: rgb(240, 240, 172);
+  font-style: italic;
+}
+
+div.op4 {
+  background-color: lightseagreen;
+  font-style: italic;
+  }
+
+@media only screen and (max-width: 768px) {
+.col-12 {
+  /* display: flex;
+  flex-direction: column;
+   */
+  height: 100vh;
+  background-color: rgb(225, 231, 243);
+}
+label {
+  padding: 5px;
+}
+
+h2.preg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 16.66%;
+  font-style: italic;
+  color: rgb(216, 144, 144);
+}
+
+.preguntas {
+  height: 83.34%;
+}
+
+.first-column, .second-column {
+  height: 50%;
+  align-items: center;
+}
+
+div.op1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+}
+
+div.op2 {
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.op3 {
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.op4 {
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+}
+
+  /* For tablet: 768px*/
+
+  @media only screen and (min-width: 769px) {
+  h2.preg {
+    font-style: italic;
+    color: rgb(216, 144, 144);
+    font-size: 40px;
+    padding: 50px;
+    text-align: center;
+    width: 100%;
+  }
+
+  div.op1 {
+      width: 92%;
+  }
+  
+  div.op2 {
+    width: 92%;
+    margin-top: 20px;
+  }
+  
+  div.op3 {
+    width: 92%;
+  }
+  
+  div.op4 {
+    width: 92%;
+    margin-top: 20px;
+  }
+
+    .col-6{
+      width: 50%;
+      padding: 40px;
+      margin: 5px;
+  }
+
+  .first-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    background-color: rgb(225, 231, 243);
+  }
+
+  .second-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    background-color: rgb(225, 231, 243);
+  }
+ /* como hago para hacer scroll 1 vez y que me cambie de pregunta */
+    /* .mega_quizz {
+      scroll-behavior: smooth;
+      scroll-snap-type: y mandatory; 
+      overflow: auto;
+      min-height: 100vh; 
+    } */
+    
+    .col-12 {
+      min-height: 100vh; 
+      display: flex;
+      flex-wrap: wrap;
+      background-color: rgb(225, 231, 243);
+      text-align: center;
+      /* scroll-snap-align: start; */
+    }
+
+    .preguntas{
+      width: 100%;
+      display: flex;
+      height: 50%;
+    }
+
+    .col-12.submit {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      background-color: rgb(225, 231, 243);
+      padding: 200px;
+      
+    }
+  }
+
+@media only screen and (min-width: 1366px) {
+  /* For desktop: */
+  h2.preg {
+    font-style: italic;
+    color: rgb(216, 144, 144);
+    font-size: 40px;
+    padding: 50px;
+    text-align: center;
+    width: 100%;
+  }
+
+  div.op1 {
+      width: 92%;
+  }
+  
+  div.op2 {
+    width: 92%;
+    margin-top: 20px;
+  }
+  
+  div.op3 {
+    width: 92%;
+  }
+  
+  div.op4 {
+    width: 92%;
+    margin-top: 20px;
+  }
+
+    .col-6{
+      width: 50%;
+      padding: 40px;
+      margin: 5px;
+  }
+
+  .first-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    background-color: rgb(225, 231, 243);
+  }
+
+  .second-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    background-color: rgb(225, 231, 243);
+  }
+ /* como hago para hacer scroll 1 vez y que me cambie de pregunta */
+    /* .mega_quizz {
+      scroll-behavior: smooth;
+      scroll-snap-type: y mandatory; 
+      overflow: auto;
+      min-height: 100vh; 
+    } */
+    
+    .col-12 {
+      min-height: 100vh; 
+      display: flex;
+      flex-wrap: wrap;
+      background-color: rgb(225, 231, 243);
+      text-align: center;
+      /* scroll-snap-align: start; */
+    }
+
+    .preguntas{
+      width: 100%;
+      display: flex;
+      height: 50%;
+    }
+
+    .col-12.submit {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      background-color: rgb(225, 231, 243);
+      padding: 200px;
+      
+    }
+  }
+
+

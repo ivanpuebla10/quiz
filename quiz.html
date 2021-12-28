@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quiz</title>
+        <script defer src="scripts.js"></script>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <main>
+                <!-- <header>
+                    <h1>Quizz</h1>
+                </header> -->
+
+                <section>
+                    <form name = "myForm" class="mega_quizz" onsubmit="return validateForm()" method="post">
+                        <div class="col-12 p1">   
+                            <!-- <div class="header"> -->
+                                <h2 class ="preg">¿Cuál de los siguientes imperios no tenía un idioma escrito?</h2>
+                            <!-- </div> -->
+                            <div class="preguntas">
+                                <div class="first-column">
+                                    <div class="col-6 op1">
+                                        <input type="radio" id="romanos" name="firstQuestion" value="Romanos">
+                                        <label for="romanos">Romanos</label>
+                                    </div>
+
+                                    <div class="col-6 op2">
+                                        <input type="radio" id="aztecas" name="firstQuestion" value="Aztecas">
+                                        <label for="aztecas">Aztecas</label>
+                                    </div>
+                                </div>
+                                <div class="second-column">
+                                    <div class="col-6 op3">
+                                        <input type="radio" id="inca" name="firstQuestion" value="Inca">
+                                        <label for="inca">Inca</label>
+                                    </div>
+
+                                    <div class="col-6 op4">
+                                        <input type="radio" id="mayas" name="firstQuestion" value="Mayas">
+                                        <label for="mayas">Mayas</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 p2">
+                            <!-- <div class="header"> -->
+                                <h2 class ="preg">¿Cuál es la capital de Hungría?</h2>
+                            <!-- </div> -->
+
+                            <div class="preguntas">
+                                <div class="first-column">
+                                    <div class="col-6 op1">
+                                        <input type="radio" id="vehicle1" name="secondQuestion" value="Viena">
+                                        <label for="vehicle1"> Viena </label>
+                                    </div>
+
+                                    <div class="col-6 op2">
+                                        <input type="radio" id="vehicle2" name="secondQuestion" value="Praga">
+                                        <label for="vehicle2"> Praga </label>
+                                    </div>
+                                </div>
+                                
+                                <div class="second-column">
+                                    <div class="col-6 op3">
+                                        <input type="radio" id="vehicle3" name="secondQuestion" value="Budapest">
+                                        <label for="vehicle3"> Budapest </label>
+                                    </div>
+
+                                    <div class="col-6 op4">
+                                        <input type="radio" id="vehicle3" name="secondQuestion" value="Estambul">
+                                        <label for="vehicle3"> Estambul </label>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+
+                        <div class="col-12 p3">
+                            <!-- <div class="header"> -->
+                                <h2 class="preg">¿Qué país tiene la mayor cantidad de islas en el mundo?</h2>
+                            <!-- </div> -->
+
+                            <div class="preguntas">
+                                <div class="first-column">
+                                    <div class="col-6 op1">      
+                                        <input type="radio" id="inglaterra" name="thirdQuestion" value="Inglaterra">
+                                        <label for="inglaterra">Inglaterra</label>
+                                    </div>
+                                
+                                    <div class="col-6 op2">
+                                        <input type="radio" id="suiza" name="thirdQuestion" value="Suiza">
+                                        <label for="css">Suiza</label>
+                                    </div>
+                                </div>
+
+                                <div class="second-column">
+                                    <div class="col-6 op3">
+                                        <input type="radio" id="estadosunidos" name="thirdQuestion" value="Estados Unidos">
+                                        <label for="estadosunidos">Estados Unidos</label>
+                                    </div>
+
+                                    <div class="col-6 op4">
+                                        <input type="radio" id="francia" name="thirdQuestion" value="Francia">
+                                        <label for="francia">Francia</label>
+                                    </div>
+                                </div>
+                            </div>                                
+                        </div>
+
+                        <div class="col-12 p4">
+                            <!-- <div class="header"> -->
+                                <h2 class="preg">¿En qué año se fundó Netflix?</h2>
+                            <!-- </div> -->
+
+                            <div class="preguntas">
+                                <div class="first-column">
+                                    <div class="col-6 op1">
+                                        <input type="radio" id="1997" name="fourthQuestion" value="1997">
+                                        <label for="1997">1997</label>
+                                    </div>
+
+                                    <div class="col-6 op2">
+                                        <input type="radio" id="2001" name="fourthQuestion" value="2001">
+                                        <label for="2001">2001</label>
+                                    </div>
+                                </div>
+
+                                <div class="second-column">
+                                    <div class="col-6 op3">
+                                        <input type="radio" id="2007" name="fourthQuestion" value="2007">
+                                        <label for="2007">2007</label>
+                                    </div>
+
+                                    <div class="col-6 op4">
+                                        <input type="radio" id="2015" name="fourthQuestion" value="2015">
+                                        <label for="2015">2015</label>
+                                    </div>
+                                </div>
+                            </div>   
+                        </div>
+
+                        <div class="col-12 p5"> 
+                            <!-- <div class="header"> -->
+                                <h2 class="preg">¿Cuál es la serie de libros mejor vendida del siglo 21?</h2>
+                            <!-- </div> -->
+
+                            <div class="preguntas">
+                                <div class="first-column">
+                                    <div class="col-6 op1">
+                                        <input type="radio" id="hp" name="fifthQuestion" value="Harry Potter">
+                                        <label for="hp">Harry Potter</label>
+                                    </div>
+
+                                    <div class="col-6 op2">
+                                        <input type="radio" id="rings" name="fifthQuestion" value="El señor de los anillos">
+                                        <label for="rings">El señor de los anillos</label>
+                                    </div>
+                                </div>
+
+                                <div class="second-column">
+                                    <div class="col-6 op3">
+                                        <input type="radio" id="fifty" name="fifthQuestion" value="50 Sombras">
+                                        <label for="fifty">50 Sombras</label>
+                                    </div>
+
+                                    <div class="col-6 op4">
+                                        <input type="radio" id="got" name="fifthQuestion" value="Juego de Tronos">
+                                        <label for="got">Juego de Tronos</label>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-12 submit">
+                                <input type="submit" value="Finalizar Quiz">
+                            </div>
+                        </div> 
+
+                    </form>
+                </section>
+        </main>
+    </body>
+</html>
